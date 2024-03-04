@@ -5,7 +5,7 @@ import { generateSidebar } from 'vitepress-sidebar';
 export default defineConfig({
   title: "Dév. Web Notes",
   description: "My personnal notes in my developper journey",
-  outDir: 'public',
+  outDir: '.vitepress/dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
