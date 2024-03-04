@@ -9,6 +9,6 @@ pages:
     - npm run docs:build
   artifacts:
     paths:
-      - .vitepress/dist
+      - ./.vitepress/dist
   only:
     - main
