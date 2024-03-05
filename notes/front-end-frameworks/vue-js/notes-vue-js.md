@@ -71,6 +71,7 @@ Coding style plus concis qui améliore et simplifie l'usage de Vue depuis Vue 3.
 ### Les fondamentaux de la réactivité
 
 #### Usage simple
+
 - import { ref } from "vue" : vue ne rafraichit que les état, pour éviter de supprimer et de re-render le html
 
 `ref` est un attribut spécial fournit par Vue.js, il y a en a d'autre comme `key` par exemple.
