@@ -6,7 +6,7 @@ export default defineConfig({
   title: "Dév. Web Notes",
   description: "My personnal notes in my developper journey",
   outDir: '.vitepress/dist',
-  base: '/repo/',
+  base: '/dev_web_notes/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
