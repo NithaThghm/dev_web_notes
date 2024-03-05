@@ -6,6 +6,7 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
+    "docs:build-gitlab": "vitepress build --base /dev-web-notes/",
     "docs:preview": "vitepress preview"
   }
 }

@@ -6,7 +6,7 @@ pages:
   script:
     # - apk add git # Uncomment this if you're using small docker images like alpine and have lastUpdated enabled
     - npm install
-    - npm run docs:build
+    - npm run docs:build-gitlab
   artifacts:
     paths:
       - .vitepress/dist
