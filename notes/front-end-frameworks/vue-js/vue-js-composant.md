@@ -57,7 +57,7 @@ https://javascript.info/import-export
 
 ### Props
 
-Voir chapitre les [Props]()
+Voir chapitre les Props
 
 ### In-DOM
 
