@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar';
+import markdownItFootnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -24,5 +25,15 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
+  },
+  markdown: {
+    config: (md) => {
+      md.use(markdownItFootnote)
+      md.renderer.rules.footnote_block_open = () => (
+        '<h2 id="sources" tabindex="-1">📖 Sources<a class="header-anchor" href="#sources" aria-label="Permalink to \'Sources\'"></a></h2>' +
+        '<section class="footnotes">\n' +
+        '<ol class="footnotes-list">\n'
+      );
+    }
   }
 })
