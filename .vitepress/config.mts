@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { generateSidebar } from 'vitepress-sidebar';
 import markdownItFootnote from 'markdown-it-footnote'
+import markdownItMark from 'markdown-it-mark'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -33,7 +34,8 @@ export default defineConfig({
         '<h2 id="sources" tabindex="-1">📖 Sources<a class="header-anchor" href="#sources" aria-label="Permalink to \'Sources\'"></a></h2>' +
         '<section class="footnotes">\n' +
         '<ol class="footnotes-list">\n'
-      );
+      )
+      md.use(markdownItMark)
     }
   }
 })
