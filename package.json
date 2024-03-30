@@ -9,5 +9,8 @@
     "docs:build-gitlab": "vitepress build --base /dev-web-notes/",
     "docs:build-github": "vitepress build --base /dev_web_notes/",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "markdown-it-footnote": "^4.0.0"
   }
 }
