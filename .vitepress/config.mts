@@ -21,7 +21,7 @@ export default defineConfig({
       underscoreToSpace: true,
       capitalizeEachWords: true
     }),
-    outline: [2, 4],
+    outline: [2, 3],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
