@@ -1,8 +1,11 @@
 
 /* Custom badges */
 .badge-ctn{
-    display:flex;
-    align-items:center;
-    justify-content: start;
-    margin: 20px 0"
+    margin: 8px 0;
+}
+
+/* Footnotes */
+hr.footnotes-divider {
+    width: 50%;
+    margin: 30px auto
 }
