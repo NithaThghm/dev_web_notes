@@ -3,14 +3,15 @@
 layout: home
 
 hero:
-  name: "Notes"
-  text: ""
+  name: "Dév. Web"
+  text: "Docs & Notes"
   tagline: My personnal notes in my developper journey !
   actions:
     - theme: brand
       text: Go to Notes
-      link: /notes/index.md
-
+      link: /docs/index.md
+  image:
+    src: /assets/vue/vuedotjs.svg
 
 features:
   - title: Feature A

@@ -1,10 +1,17 @@
 ---
+title: Introduction
 order: 1
 ---
 
 # Vue Js : Introduction
 
 ## Tools
+
+### 🧪 Pre-learning quiz
+
+Se tester avant de se lancer ?
+
+https://www.w3schools.com/quiztest/quiztest.php?qtest=VUE
 
 ### 🗺️ Roadmap
 
@@ -26,19 +33,23 @@ order: 1
 
 ### Présentation
 
-A la base, Vue.js était une simple librairie javascript. En combinant Vue.js à d'autres librairies (ex : router, webpack, vite, ...), Vue.js devient un framework front-end. La version 3 de Vue.js est considérée comme un framework.
+A la base, Vue.js était une simple librairie JavaScript. En combinant Vue.js à d'autres librairies (ex : router, webpack, vite, ...), Vue.js devient un framework front-end. La version 3 de Vue.js est considérée comme un framework.
 
 Vue.js permet de concevoir, rapidement et simplement, des interfaces web interactive.  
-Il se focalise sur le ViewModel du pattern MVVM [^mvvm]. (concept de data driven view)
-Sa logique se base sur la déclaration de composants à utiliser dans l'application.
+Il se focalise sur le ViewModel du pattern Model View ViewModel (MVVM) [^mvvm].  Une architecture dont le concept est le **data driven view**.
 
 Le but de Vue.js est d'exploiter les avantages des données réactives par liaison et le système de composants.
+Un des logiques que Vue mets en avant est la déclaration de composants à utiliser dans l'application.
 
 Il y a deux notions clés dans la logique du framework Vue :
-- Rendu déclaratif : la construction sous forme de HTML via les templates.
-- Réactivité : Tracker de manière efficiente les changements dans le DOM.
 
-Vue est 'client side rendered' soit exécuté du côté du client, ce qui est logique car Vue est un framework JavaScript et le JavaScript est éxécuté côté client.
+- Rendu déclaratif :  
+  la construction sous forme de HTML des templates. A l'instar de JSX chez React, Vue propose son propre HTML augmenté.
+
+- Réactivité :  
+  Tracker de manière efficiente les changements dans le DOM. Vue est capable de voir instantanément les changements, côté front et côté back, d'un élément du DOM mis sous observation et met à jour l'élément immédiatement.
+
+Vue est 'client side rendered' soit exécuté du côté du client, car Vue est un framework JavaScript soit écrit entièrement en JavaScript (& TypeScript).
 
 Vue est flexible, adaptable et évolutif. Il peut être utiliser dans différents besoin simple comme complexe, d'où son slogan "The progressive framework", il promet de nous satisfaire dans nos différents cas d'usage.
 
@@ -114,6 +125,9 @@ Listes des notes à lire pour acquérir une compréhension de base :
 ### Compréhension avancée :
 Listes des notes à lire pour acquérir une compréhension avancée :
 <BadgeVueSenior class="badge-ctn"/>
+
+- Ref: Shallow refs
+- custom events
 
 ### Mastering Vue Js :
 Listes des notes à lire pour acquérir très bonne maîtrise :

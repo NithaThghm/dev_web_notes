@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # Composants
 
 <!-- Badge -->
@@ -40,7 +44,7 @@ L'avantage de la balise `<template>` est que Vue interprétera le JavaScript emb
 </style>
 ```
 
-L'attribut `setup` informe Vue qu'il devra gérer lui même l'export du composant.  
+L'attribut `setup` informe Vue que d'1. On utitile le style Composition API et de 2. qu'il devra gérer lui même l'export des différentes variables, constantes, méthodes.[^setup]
 La balise `<template>` est obligatoire dans un fichier `.vue`.[^balise-template].  
 L'attribut `scoped` informe Vue que le css n'impacte que les éléments du fichier dans lequel il réside.[^scoped]
 
@@ -172,7 +176,42 @@ Voir chapitre les Props
 On peut écrire des template Vue directement dans la balise native template d'HTML
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template
 
+### Slots
+
+Les slot permettent d'ajouter simplement du contenu à des templates, exemple alerte box : 
+
+```vue
+<!-- AlerteBox.vue -->
+<template>
+  <div class="alert-box">
+    <strong>This is an Error for Demo Purposes</strong>
+    <slot />
+  </div>
+</template>
+```
+```vue
+<script setup>
+  import { AlertBox } from "./path/example"
+</script>
+
+<template>
+  <AlertBox>
+    Something bad happened.
+  </AlertBox>
+</template>
+```
+
+### Composant dynamic 
+
+<!-- Component changes when currentTab changes -->
+```vue
+<component :is="tabs[currentTab]"></component>
+```
+Keepalive composant ?
+
+
 <!-- Footnotes -->
 [^SFC]: https://vuejs.org/guide/scaling-up/sfc.html
 [^balise-template]: 🗝️ `<template>` obligatoire.
 [^scoped]: 🗝️ `scoped` : le css n'impacte que le composant.
+[^setup]: https://vuejs.org/guide/essentials/reactivity-fundamentals.html#script-setup
