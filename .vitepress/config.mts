@@ -12,19 +12,33 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Notes', link: '/notes/index.md' }
+      { text: 'Notes', link: '/docs/index.md' }
     ],
-    sidebar: generateSidebar({
-      documentRootPath: '/',
-      scanStartPath: '/notes/',
-      useTitleFromFrontmatter: true,
-      collapsed: true,
-      hyphenToSpace: true,
-      underscoreToSpace: true,
-      capitalizeEachWords: true,
-      sortMenusOrderByDescending: true,
-      frontmatterOrderDefaultValue: 100
-    }),
+    sidebar: generateSidebar([
+      {
+        documentRootPath: '/',
+        scanStartPath: '/docs/',
+        useTitleFromFrontmatter: true,
+        hyphenToSpace: true,
+        underscoreToSpace: true,
+        capitalizeEachWords: true,
+        includeEmptyFolder: true,
+        excludeFolders: ["notes"],
+        useFolderLinkFromIndexFile: true,
+      },
+      {
+        documentRootPath: '/',
+        scanStartPath: 'docs/front-end-frameworks/vue-js/',
+        resolvePath: '/docs/front-end-frameworks/vue-js/',
+        useTitleFromFrontmatter: true,
+        hyphenToSpace: true,
+        underscoreToSpace: true,
+        capitalizeEachWords: true,
+        sortMenusByFrontmatterOrder : true,
+        frontmatterOrderDefaultValue: 100,
+        useFolderTitleFromIndexFile: true
+      }
+    ]),
     outline: [2, 3],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
